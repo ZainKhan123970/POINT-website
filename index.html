@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POINT — The First Drop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Announcement bar -->
+<div class="announce">FREE SHIPPING ON ORDERS RS. 7,500+</div>
+
+<!-- Navbar -->
+<header class="nav">
+  <div class="wrap">
+    <a href="index.html" class="nav__logo">
+      <img src="assets/images/logo.jpg" alt="POINT logo">
+      <span>POINT</span>
+    </a>
+
+    <nav>
+      <ul class="nav__links">
+        <li><a href="index.html" class="active-link">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav__actions">
+      <div class="nav-search" id="navSearch">
+        <div class="nav-search__box">
+          <input type="text" class="nav-search__input" placeholder="Search products…" autocomplete="off">
+        </div>
+        <button type="button" class="icon-btn nav-search__toggle" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        </button>
+      </div>
+      <button class="icon-btn" aria-label="Account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 5-6 8-6s6.5 2 8 6"/></svg>
+      </button>
+      <a href="cart.html" class="icon-btn" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.8h8.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+        <span class="cart-count">0</span>
+      </a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+        <span class="theme-toggle__knob">☀️</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <video class="hero__video" autoplay muted loop playsinline poster="assets/images/tee-black.png">
+    <source src="assets/video/hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero__scrim"></div>
+  <div class="hero__content">
+    <span class="hero__eyebrow">POINT — SS26 COLLECTION</span>
+    <h1>THE FIRST<br>DROP.</h1>
+    <div class="hero__rule"></div>
+    <p>OVERSIZED FIT. BUILT TO LAST.</p>
+    <div class="hero__cta">
+      <a href="shop.html" class="btn btn--solid">Shop Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- Feature strip -->
+<section class="features">
+  <div class="wrap">
+    <div class="feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="6" width="15" height="12" rx="1"/><path d="M16 10h3l3 3v5h-6"/><circle cx="6" cy="19" r="1.6"/><circle cx="17.5" cy="19" r="1.6"/></svg>
+      <div><strong>Free Shipping</strong><span>On orders Rs. 7,500+</span></div>
+    </div>
+    <div class="feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.4 8.5-8 10-4.6-1.5-8-5-8-10V6l8-4z"/></svg>
+      <div><strong>Secure Payments</strong><span>100% protected</span></div>
+    </div>
+    <div class="feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg>
+      <div><strong>Easy Returns</strong><span>14 days</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Best Sellers -->
+<section class="section" id="bestsellers">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <div>
+        <span class="section__label">BEST SELLERS</span>
+        <h2>Fresh Off The Rack</h2>
+      </div>
+      <a href="shop.html" class="view-all">View All <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+
+    <div class="grid reveal-stagger">
+
+      <!-- Card 1 -->
+      <article class="card" data-img="assets/images/tee-white.png" data-name="Point Logo Tee — White" data-price="Rs. 3,499" data-desc="Oversized fit crewneck in premium 260gsm heavyweight cotton, finished with the signature gold POINT graffiti drop at the chest.">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <img src="assets/images/tee-white.png" alt="Point Logo Tee White">
+              <div class="card__quick"><button class="card__quick-btn">Quick View</button></div>
+            </div>
+            <div class="card__body">
+              <h3>Point Logo Tee — White</h3>
+              <div class="card__meta">
+                <span class="card__price">Rs. 3,499</span>
+                <button class="card__details-btn">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 5l7 7-7 7M5 12h14"/></svg></button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <h4>White Tee</h4>
+            <ul class="card__back-list">
+              <li><span>Fabric</span><span>260gsm cotton</span></li>
+              <li><span>Fit</span><span>Oversized</span></li>
+              <li><span>Sizes</span><span>S · M · L · XL</span></li>
+              <li><span>Care</span><span>Cold wash</span></li>
+            </ul>
+            <p class="card__back-desc">Boxy silhouette, dropped shoulder seams, ribbed collar — built for everyday wear that doesn't fade or lose shape.</p>
+            <button class="card__back-close">← Back <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 19l-7-7 7-7M4 12h16"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card" data-img="assets/images/tee-black.png" data-name="Point Logo Tee — Black" data-price="Rs. 3,499" data-desc="Oversized fit crewneck in premium 260gsm heavyweight cotton, finished with the signature gold POINT graffiti drop at the chest.">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <img src="assets/images/tee-black.png" alt="Point Logo Tee Black">
+              <div class="card__quick"><button class="card__quick-btn">Quick View</button></div>
+            </div>
+            <div class="card__body">
+              <h3>Point Logo Tee — Black</h3>
+              <div class="card__meta">
+                <span class="card__price">Rs. 3,499</span>
+                <button class="card__details-btn">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 5l7 7-7 7M5 12h14"/></svg></button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <h4>Black Tee</h4>
+            <ul class="card__back-list">
+              <li><span>Fabric</span><span>260gsm cotton</span></li>
+              <li><span>Fit</span><span>Oversized</span></li>
+              <li><span>Sizes</span><span>S · M · L · XL</span></li>
+              <li><span>Care</span><span>Cold wash</span></li>
+            </ul>
+            <p class="card__back-desc">Boxy silhouette, dropped shoulder seams, ribbed collar — built for everyday wear that doesn't fade or lose shape.</p>
+            <button class="card__back-close">← Back <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 19l-7-7 7-7M4 12h16"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card" data-img="assets/images/logo.jpg" data-name="Logo Detail — Graffiti Halo" data-price="Signature" data-desc="The POINT mark: a hand-styled graffiti wordmark with a dripping halo. Screen-printed in gold on every piece.">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <img src="assets/images/logo.jpg" alt="Logo Detail">
+              <div class="card__quick"><button class="card__quick-btn">Quick View</button></div>
+            </div>
+            <div class="card__body">
+              <h3>Logo Detail</h3>
+              <div class="card__meta">
+                <span class="card__price">Signature</span>
+                <button class="card__details-btn">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 5l7 7-7 7M5 12h14"/></svg></button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <h4>The Mark</h4>
+            <ul class="card__back-list">
+              <li><span>Style</span><span>Graffiti wordmark</span></li>
+              <li><span>Print</span><span>Gold screen-print</span></li>
+              <li><span>Placement</span><span>Left chest</span></li>
+            </ul>
+            <p class="card__back-desc">A hand-styled halo above the wordmark — the drip references the brand's street-born, elevated identity.</p>
+            <button class="card__back-close">← Back <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 19l-7-7 7-7M4 12h16"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card" data-img="assets/images/tee-white.png" data-name="Point Logo Tee — White / L" data-price="Rs. 3,499" data-desc="Oversized fit crewneck in premium 260gsm heavyweight cotton, finished with the signature gold POINT graffiti drop at the chest.">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <img src="assets/images/tee-white.png" alt="Point Logo Tee White">
+              <div class="card__quick"><button class="card__quick-btn">Quick View</button></div>
+            </div>
+            <div class="card__body">
+              <h3>Point Logo Tee — White</h3>
+              <div class="card__meta">
+                <span class="card__price">Rs. 3,499</span>
+                <button class="card__details-btn">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 5l7 7-7 7M5 12h14"/></svg></button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <h4>White Tee</h4>
+            <ul class="card__back-list">
+              <li><span>Fabric</span><span>260gsm cotton</span></li>
+              <li><span>Fit</span><span>Oversized</span></li>
+              <li><span>Sizes</span><span>S · M · L · XL</span></li>
+              <li><span>Care</span><span>Cold wash</span></li>
+            </ul>
+            <p class="card__back-desc">Boxy silhouette, dropped shoulder seams, ribbed collar — built for everyday wear that doesn't fade or lose shape.</p>
+            <button class="card__back-close">← Back <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 19l-7-7 7-7M4 12h16"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="section why-us">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <div>
+        <span class="section__label">WHY POINT</span>
+        <h2>Why Choose Us</h2>
+      </div>
+    </div>
+
+    <div class="why-grid reveal-stagger">
+      <div class="why-card">
+        <span class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3 7h7l-5.5 4.5 2 7L12 16l-6.5 4.5 2-7L2 9h7z"/></svg></span>
+        <h3>Built Heavy</h3>
+        <p>260gsm+ heavyweight cotton on every piece — not the thin, see-through stuff. Holds its shape wash after wash.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v4l-4 4 4 4v4H4v-4l4-4-4-4z"/></svg></span>
+        <h3>Cut Oversized</h3>
+        <p>Dropped shoulders, boxy fit, real streetwear proportions — designed to be worn, not just photographed.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21c-4.4-2.4-8-6.2-8-11a8 8 0 0 1 16 0c0 4.8-3.6 8.6-8 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+        <h3>Karachi Made</h3>
+        <p>Designed and printed locally, worn everywhere — proof that local streetwear can hold its own anywhere.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg></span>
+        <h3>Print That Lasts</h3>
+        <p>Gold screen-printed, never a sticker or a shortcut — our mark doesn't crack or peel after a few washes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq-section" id="faq">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <div>
+        <span class="section__label">FAQ</span>
+        <h2>Got Questions?</h2>
+      </div>
+    </div>
+
+    <div class="faq-list reveal-stagger">
+
+      <div class="faq-item">
+        <button type="button" class="faq-q">
+          What sizes do you carry?
+          <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a__inner"><p>Every tee comes in S, M, L, and XL. Since our fit runs oversized, most people size down one from their usual — check the size guide on each product page if you're between sizes.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button type="button" class="faq-q">
+          How long does shipping take?
+          <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a__inner"><p>Orders within Karachi typically arrive in 1–2 business days. Other cities across Pakistan take 2–5 business days depending on location.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button type="button" class="faq-q">
+          What's your return & exchange policy?
+          <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a__inner"><p>Unworn, unwashed items with tags attached can be returned or exchanged within 14 days of delivery. Reach out through the Contact page and we'll sort out pickup.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button type="button" class="faq-q">
+          Do you offer Cash on Delivery?
+          <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a__inner"><p>Yes — along with Cash on Delivery, you can also pay via Bank Transfer, JazzCash, or Card at checkout.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button type="button" class="faq-q">
+          How do I track my order?
+          <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a__inner"><p>Once your order ships, you'll get a tracking number over WhatsApp/SMS. You can also message us on the Contact page any time for a status update.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button type="button" class="faq-q">
+          Can I change my order after placing it?
+          <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a__inner"><p>If your order hasn't shipped yet, message us right away and we'll do our best to update the size, color, or address before it goes out.</p></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div>
+      <div class="footer__logo">
+        <img src="assets/images/logo.jpg" alt="POINT logo">
+        <span>POINT</span>
+      </div>
+      <p>Street-born, built to last. Oversized essentials designed in Karachi, worn everywhere.</p>
+      <div class="newsletter">
+        <input type="email" placeholder="Your email">
+        <button>Join</button>
+      </div>
+    </div>
+    <div>
+      <h5>SHOP</h5>
+      <ul>
+        <li><a href="#">New Arrivals</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>SUPPORT</h5>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Returns & Exchange</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>FOLLOW</h5>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">TikTok</a></li>
+        <li><a href="https://wa.me/923218633268" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© 2026 POINT. All rights reserved.</span>
+    <span>Karachi, Pakistan</span>
+  </div>
+</footer>
+
+<!-- Quick View Modal -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal">
+    <div class="modal__media"><img id="modalImg" src="" alt=""></div>
+    <div class="modal__body">
+      <button class="modal__close" id="modalClose" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <h3 id="modalTitle">—</h3>
+      <div class="modal__price" id="modalPrice">—</div>
+      <p class="modal__desc" id="modalDesc">—</p>
+      <span class="modal__label">Select Size</span>
+      <div class="modal__sizes">
+        <button class="size-pill">S</button>
+        <button class="size-pill selected">M</button>
+        <button class="size-pill">L</button>
+        <button class="size-pill">XL</button>
+      </div>
+      <button id="modalAddToCart" class="btn btn--solid" style="width:100%;justify-content:center;">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/faq.js"></script>
+</body>
+</html>

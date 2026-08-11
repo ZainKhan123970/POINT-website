@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout | POINT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="announce">FREE SHIPPING ON ORDERS RS. 7,500+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="index.html" class="nav__logo">
+      <img src="assets/images/logo.jpg" alt="POINT logo">
+      <span>POINT</span>
+    </a>
+    <nav>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="checkout.html" class="active-link">Checkout</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav__actions">
+      <div class="nav-search" id="navSearch">
+        <div class="nav-search__box">
+          <input type="text" class="nav-search__input" placeholder="Search products…" autocomplete="off">
+        </div>
+        <button type="button" class="icon-btn nav-search__toggle" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        </button>
+      </div>
+      <button class="icon-btn" aria-label="Account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 5-6 8-6s6.5 2 8 6"/></svg>
+      </button>
+      <a href="cart.html" class="icon-btn" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.8h8.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+        <span class="cart-count">0</span>
+      </a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+        <span class="theme-toggle__knob">☀️</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="wrap checkout-section">
+  <h1>Checkout</h1>
+
+  <div class="checkout-layout">
+
+    <div id="checkoutMain">
+      <!-- Payment method tabs -->
+      <div class="pay-methods">
+        <button type="button" class="pay-method active" data-method="cod">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20"/><circle cx="7" cy="15" r="1"/></svg>
+          Cash on Delivery
+        </button>
+        <button type="button" class="pay-method" data-method="bank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10l9-6 9 6"/><path d="M5 10v9M10 10v9M14 10v9M19 10v9"/><path d="M3 19h18"/></svg>
+          Bank Transfer
+        </button>
+        <button type="button" class="pay-method" data-method="jazzcash">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 18h6"/></svg>
+          JazzCash
+        </button>
+        <button type="button" class="pay-method" data-method="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+          Card
+        </button>
+      </div>
+
+      <!-- COD -->
+      <div class="pay-panel active" id="payPanelCod">
+        <h4>Cash on Delivery</h4>
+        <p>Pay in cash when your order arrives at your doorstep. No advance payment needed.</p>
+        <div class="pay-info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="6" width="15" height="12" rx="1"/><path d="M16 10h3l3 3v5h-6"/><circle cx="6" cy="19" r="1.6"/><circle cx="17.5" cy="19" r="1.6"/></svg>
+          <div><strong>Delivery in 2–5 business days</strong><span>Karachi & major cities delivered faster.</span></div>
+        </div>
+        <div class="pay-info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <div><strong>Please keep exact change ready</strong><span>Our rider may not always carry change.</span></div>
+        </div>
+      </div>
+
+      <!-- Bank Transfer -->
+      <div class="pay-panel" id="payPanelBank">
+        <h4>Bank Transfer</h4>
+        <p>Transfer the order total to the account below, then send us the payment screenshot on WhatsApp to confirm your order.</p>
+        <div class="pay-info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10l9-6 9 6"/><path d="M5 10v9M19 10v9"/><path d="M3 19h18"/></svg>
+          <div><strong>Meezan Bank</strong><span>Account Title: POINT Streetwear · Account No. 0123-4567-8901</span></div>
+        </div>
+        <div class="pay-info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 1 1 8.5-8.5z"/></svg>
+          <div><strong>Confirm on WhatsApp</strong><span>+92 321 8633268 — send screenshot after transfer.</span></div>
+        </div>
+      </div>
+
+      <!-- JazzCash -->
+      <div class="pay-panel" id="payPanelJazzcash">
+        <h4>JazzCash</h4>
+        <p>Send the order total via JazzCash mobile wallet to the number below, then place your order — we'll confirm once received.</p>
+        <div class="pay-info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 18h6"/></svg>
+          <div><strong>JazzCash Number</strong><span>0312-1234567 · Account Title: POINT Streetwear</span></div>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="pay-panel" id="payPanelCard">
+        <h4>Pay by Card</h4>
+        <div class="cc-form">
+          <div class="cc-card-wrap">
+            <div class="cc-card" id="ccCard">
+              <div class="cc-card__face cc-card__front">
+                <div class="cc-card__top">
+                  <span>CreditCard</span>
+                  <span class="cc-brand" id="ccBrandFront"><span class="generic-text">CARD</span></span>
+                </div>
+                <div class="cc-card__number" id="ccNumberDisplay">#### #### #### ####</div>
+                <div class="cc-card__bottom">
+                  <div><span class="cc-label">CARD HOLDER</span><div id="ccNameDisplay">YOUR NAME</div></div>
+                  <div><span class="cc-label">EXPIRES</span><div id="ccExpiryDisplay">MM/YY</div></div>
+                </div>
+              </div>
+              <div class="cc-card__face cc-card__back">
+                <div class="cc-card__stripe"></div>
+                <div class="cc-card__cvv-row">
+                  <span style="font-size:11px;color:rgba(255,255,255,.7);">CVV</span>
+                  <div class="cc-card__cvv-box" id="ccCvvDisplay">***</div>
+                </div>
+                <span class="cc-brand-back" id="ccBrandBack"><span class="generic-text">CARD</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cc-fields">
+            <label>Card Number
+              <input type="text" id="ccNumber" placeholder="1234 5678 9012 3456" inputmode="numeric">
+            </label>
+            <label>Card Holder
+              <input type="text" id="ccName" placeholder="YOUR NAME">
+            </label>
+            <div class="cc-row">
+              <label>Expiration Date
+                <div class="cc-exp">
+                  <select id="ccMonth"><option value="">Month</option></select>
+                  <select id="ccYear"><option value="">Year</option></select>
+                </div>
+              </label>
+              <label>CVV
+                <input type="text" id="ccCvv" placeholder="***" inputmode="numeric">
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" id="placeOrderBtn" class="btn btn--solid place-order-btn">Place Order</button>
+    </div>
+
+    <!-- Order summary -->
+    <aside class="checkout-order-summary">
+      <h3>Order Summary</h3>
+      <div id="checkoutSummaryList"><!-- rendered by checkout.js --></div>
+      <div class="cart-summary-row" style="margin-top:14px;"><span>Subtotal</span><span id="checkoutSubtotal">Rs. 0</span></div>
+      <div class="cart-summary-row"><span>Shipping</span><span id="checkoutShipping">Free</span></div>
+      <div class="cart-summary-row total"><span>Total</span><span id="checkoutTotal">Rs. 0</span></div>
+    </aside>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div>
+      <div class="footer__logo">
+        <img src="assets/images/logo.jpg" alt="POINT logo">
+        <span>POINT</span>
+      </div>
+      <p>Street-born, built to last. Oversized essentials designed in Karachi, worn everywhere.</p>
+      <div class="newsletter">
+        <input type="email" placeholder="Your email">
+        <button>Join</button>
+      </div>
+    </div>
+    <div>
+      <h5>SHOP</h5>
+      <ul>
+        <li><a href="shop.html">New Arrivals</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>SUPPORT</h5>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Returns & Exchange</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>FOLLOW</h5>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">TikTok</a></li>
+        <li><a href="https://wa.me/923218633268" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© 2026 POINT. All rights reserved.</span>
+    <span>Karachi, Pakistan</span>
+  </div>
+</footer>
+
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart | POINT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="announce">FREE SHIPPING ON ORDERS RS. 7,500+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="index.html" class="nav__logo">
+      <img src="assets/images/logo.jpg" alt="POINT logo">
+      <span>POINT</span>
+    </a>
+    <nav>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav__actions">
+      <div class="nav-search" id="navSearch">
+        <div class="nav-search__box">
+          <input type="text" class="nav-search__input" placeholder="Search products…" autocomplete="off">
+        </div>
+        <button type="button" class="icon-btn nav-search__toggle" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        </button>
+      </div>
+      <button class="icon-btn" aria-label="Account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 5-6 8-6s6.5 2 8 6"/></svg>
+      </button>
+      <a href="cart.html" class="icon-btn active-link" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.8h8.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+        <span class="cart-count">0</span>
+      </a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+        <span class="theme-toggle__knob">☀️</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="wrap cart-section">
+  <h1>Your Cart</h1>
+  <span class="cart-count-label" id="cartItemCount">0 items</span>
+
+  <!-- Populated layout -->
+  <div class="cart-layout" id="cartLayout">
+    <div class="cart-items" id="cartItems"><!-- rendered by cart-page.js --></div>
+
+    <aside class="cart-summary">
+      <h3>Order Summary</h3>
+      <div class="cart-summary-row"><span>Subtotal</span><span id="cartSubtotal">Rs. 0</span></div>
+      <div class="cart-summary-row"><span>Shipping</span><span id="cartShipping">Free</span></div>
+      <div class="cart-summary-row total"><span>Total</span><span id="cartTotal">Rs. 0</span></div>
+
+      <div class="cart-promo">
+        <input type="text" placeholder="Promo code">
+        <button type="button">Apply</button>
+      </div>
+
+      <a href="checkout.html" class="btn btn--solid" style="width:100%;justify-content:center;">Checkout</a>
+      <p class="cart-checkout-note">Free shipping on orders Rs. 7,500+ · 14-day easy returns</p>
+    </aside>
+  </div>
+
+  <!-- Empty state -->
+  <div class="cart-empty" id="cartEmpty">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.8h8.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+    <h3>Your cart is empty</h3>
+    <p>Looks like you haven't added anything yet — go find something worth wearing.</p>
+    <a href="shop.html" class="btn btn--solid">Continue Shopping</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div>
+      <div class="footer__logo">
+        <img src="assets/images/logo.jpg" alt="POINT logo">
+        <span>POINT</span>
+      </div>
+      <p>Street-born, built to last. Oversized essentials designed in Karachi, worn everywhere.</p>
+      <div class="newsletter">
+        <input type="email" placeholder="Your email">
+        <button>Join</button>
+      </div>
+    </div>
+    <div>
+      <h5>SHOP</h5>
+      <ul>
+        <li><a href="shop.html">New Arrivals</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>SUPPORT</h5>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Returns & Exchange</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>FOLLOW</h5>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">TikTok</a></li>
+        <li><a href="https://wa.me/923218633268" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© 2026 POINT. All rights reserved.</span>
+    <span>Karachi, Pakistan</span>
+  </div>
+</footer>
+
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/cart-page.js"></script>
+</body>
+</html>

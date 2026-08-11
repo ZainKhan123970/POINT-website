@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop All — POINT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="announce">FREE SHIPPING ON ORDERS RS. 7,500+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="index.html" class="nav__logo">
+      <img src="assets/images/logo.jpg" alt="POINT logo">
+      <span>POINT</span>
+    </a>
+    <nav>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="shop.html" class="active-link">Shop</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav__actions">
+      <div class="nav-search" id="navSearch">
+        <div class="nav-search__box">
+          <input type="text" class="nav-search__input" placeholder="Search products…" autocomplete="off">
+        </div>
+        <button type="button" class="icon-btn nav-search__toggle" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        </button>
+      </div>
+      <button class="icon-btn" aria-label="Account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 5-6 8-6s6.5 2 8 6"/></svg>
+      </button>
+      <a href="cart.html" class="icon-btn" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.8h8.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+        <span class="cart-count">0</span>
+      </a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+        <span class="theme-toggle__knob">☀️</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Short page hero -->
+<section class="page-hero reveal">
+  <span>SHOP ALL</span>
+  <h1>The Latest POINT Drops</h1>
+</section>
+
+<section class="wrap shop-layout" id="collections">
+
+  <!-- Filters sidebar -->
+  <aside class="filters reveal">
+    <h4>Filters</h4>
+
+    <div class="filter-group open">
+      <button type="button" class="filter-summary">Size <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></span></button>
+      <div class="filter-panel">
+        <div class="filter-opts">
+          <label><input type="checkbox" name="size" value="S"> S</label>
+          <label><input type="checkbox" name="size" value="M"> M</label>
+          <label><input type="checkbox" name="size" value="L"> L</label>
+          <label><input type="checkbox" name="size" value="XL"> XL</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-group open">
+      <button type="button" class="filter-summary">Color <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></span></button>
+      <div class="filter-panel">
+        <div class="filter-opts">
+          <div class="swatch-row">
+            <button class="swatch selected" data-color="all" style="background:conic-gradient(#fff 0 50%, #0A0A0A 50% 100%);" aria-label="All colors"></button>
+            <button class="swatch" data-color="white" style="background:#fff;" aria-label="White"></button>
+            <button class="swatch" data-color="black" style="background:#0A0A0A;" aria-label="Black"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-group open">
+      <button type="button" class="filter-summary">Price <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></span></button>
+      <div class="filter-panel">
+        <div class="filter-opts">
+          <label><input type="radio" name="price" value="all" checked> All</label>
+          <label><input type="radio" name="price" value="low"> Rs. 3,000 – 3,500</label>
+          <label><input type="radio" name="price" value="high"> Rs. 3,500 – 4,000</label>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Products -->
+  <div>
+    <div class="shop-toolbar reveal">
+      <span class="count">8 products</span>
+      <select class="sort-select">
+        <option value="featured">Sort: Featured</option>
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+      </select>
+    </div>
+
+    <div class="grid shop-page-grid reveal-stagger">
+
+      <!-- 1 -->
+      <article class="card" data-color="white" data-sizes="S,M,L,XL" data-price="Rs. 3,499" data-img="assets/images/tee-white.png" data-name="Point Logo Tee — White" data-desc="Oversized fit crewneck in premium 260gsm heavyweight cotton, finished with the signature gold POINT graffiti drop at the chest.">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <img src="assets/images/tee-white.png" alt="Point Logo Tee White">
+              <div class="card__quick"><button class="card__quick-btn">Quick View</button></div>
+            </div>
+            <div class="card__body">
+              <h3>Point Logo Tee — White</h3>
+              <div class="card__meta">
+                <span class="card__price">Rs. 3,499</span>
+                <button class="card__details-btn">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 5l7 7-7 7M5 12h14"/></svg></button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <h4>White Tee</h4>
+            <ul class="card__back-list">
+              <li><span>Fabric</span><span>260gsm cotton</span></li>
+              <li><span>Fit</span><span>Oversized</span></li>
+              <li><span>Sizes</span><span>S · M · L · XL</span></li>
+              <li><span>Care</span><span>Cold wash</span></li>
+            </ul>
+            <p class="card__back-desc">Boxy silhouette, dropped shoulder seams, ribbed collar — built for everyday wear that doesn't fade or lose shape.</p>
+            <button class="card__back-close">← Back <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 19l-7-7 7-7M4 12h16"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card" data-color="black" data-sizes="S,M,L,XL" data-price="Rs. 3,499" data-img="assets/images/tee-black.png" data-name="Point Logo Tee — Black" data-desc="Oversized fit crewneck in premium 260gsm heavyweight cotton, finished with the signature gold POINT graffiti drop at the chest.">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <img src="assets/images/tee-black.png" alt="Point Logo Tee Black">
+              <div class="card__quick"><button class="card__quick-btn">Quick View</button></div>
+            </div>
+            <div class="card__body">
+              <h3>Point Logo Tee — Black</h3>
+              <div class="card__meta">
+                <span class="card__price">Rs. 3,499</span>
+                <button class="card__details-btn">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 5l7 7-7 7M5 12h14"/></svg></button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <h4>Black Tee</h4>
+            <ul class="card__back-list">
+              <li><span>Fabric</span><span>260gsm cotton</span></li>
+              <li><span>Fit</span><span>Oversized</span></li>
+              <li><span>Sizes</span><span>S · M · L · XL</span></li>
+              <li><span>Care</span><span>Cold wash</span></li>
+            </ul>
+            <p class="card__back-desc">Boxy silhouette, dropped shoulder seams, ribbed collar — built for everyday wear that doesn't fade or lose shape.</p>
+            <button class="card__back-close">← Back <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 19l-7-7 7-7M4 12h16"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card" data-color="white" data-sizes="M,L,XL" data-price="Rs. 3,799" data-img="assets/images/tee-white.png" data-name="Point Oversized Tee — White" data-desc="A boxier, drop-shoulder cut of our signature tee — extra room through the body for a heavier streetwear silhouette.">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <img src="assets/images/tee-white.png" alt="Point Oversized Tee White">
+              <div class="card__quick"><button class="card__quick-btn">Quick View</button></div>
+            </div>
+            <div class="card__body">
+              <h3>Point Oversized Tee — White</h3>
+              <div class="card__meta">
+                <span class="card__price">Rs. 3,799</span>
+                <button class="card__details-btn">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 5l7 7-7 7M5 12h14"/></svg></button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <h4>Oversized White</h4>
+            <ul class="card__back-list">
+              <li><span>Fabric</span><span>280gsm cotton</span></li>
+              <li><span>Fit</span><span>Extra oversized</span></li>
+              <li><span>Sizes</span><span>M · L · XL</span></li>
+              <li><span>Care</span><span>Cold wash</span></li>
+            </ul>
+            <p class="card__back-desc">Heavier drop-shoulder cut with a boxier body for a bigger streetwear silhouette.</p>
+            <button class="card__back-close">← Back <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 19l-7-7 7-7M4 12h16"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card" data-color="black" data-sizes="M,L,XL" data-price="Rs. 3,799" data-img="assets/images/tee-black.png" data-name="Point Oversized Tee — Black" data-desc="A boxier, drop-shoulder cut of our signature tee — extra room through the body for a heavier streetwear silhouette.">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <img src="assets/images/tee-black.png" alt="Point Oversized Tee Black">
+              <div class="card__quick"><button class="card__quick-btn">Quick View</button></div>
+            </div>
+            <div class="card__body">
+              <h3>Point Oversized Tee — Black</h3>
+              <div class="card__meta">
+                <span class="card__price">Rs. 3,799</span>
+                <button class="card__details-btn">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 5l7 7-7 7M5 12h14"/></svg></button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <h4>Oversized Black</h4>
+            <ul class="card__back-list">
+              <li><span>Fabric</span><span>280gsm cotton</span></li>
+              <li><span>Fit</span><span>Extra oversized</span></li>
+              <li><span>Sizes</span><span>M · L · XL</span></li>
+              <li><span>Care</span><span>Cold wash</span></li>
+            </ul>
+            <p class="card__back-desc">Heavier drop-shoulder cut with a boxier body for a bigger streetwear silhouette.</p>
+            <button class="card__back-close">← Back <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 19l-7-7 7-7M4 12h16"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card" data-color="white" data-sizes="S,M,L" data-price="Rs. 3,299" data-img="assets/images/tee-white.png" data-name="Point Essential Tee — White" data-desc="A lighter everyday weight of the POINT tee, same graffiti chest print, tighter true-to-size cut.">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <img src="assets/images/tee-white.png" alt="Point Essential Tee White">
+              <div class="card__quick"><button class="card__quick-btn">Quick View</button></div>
+            </div>
+            <div class="card__body">
+              <h3>Point Essential Tee — White</h3>
+              <div class="card__meta">
+                <span class="card__price">Rs. 3,299</span>
+                <button class="card__details-btn">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 5l7 7-7 7M5 12h14"/></svg></button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <h4>Essential White</h4>
+            <ul class="card__back-list">
+              <li><span>Fabric</span><span>220gsm cotton</span></li>
+              <li><span>Fit</span><span>True to size</span></li>
+              <li><span>Sizes</span><span>S · M · L</span></li>
+              <li><span>Care</span><span>Cold wash</span></li>
+            </ul>
+            <p class="card__back-desc">Lighter everyday weight, same chest graffiti print, closer to a regular fit.</p>
+            <button class="card__back-close">← Back <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 19l-7-7 7-7M4 12h16"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="card" data-color="black" data-sizes="S,M,L" data-price="Rs. 3,299" data-img="assets/images/tee-black.png" data-name="Point Essential Tee — Black" data-desc="A lighter everyday weight of the POINT tee, same graffiti chest print, tighter true-to-size cut.">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <img src="assets/images/tee-black.png" alt="Point Essential Tee Black">
+              <div class="card__quick"><button class="card__quick-btn">Quick View</button></div>
+            </div>
+            <div class="card__body">
+              <h3>Point Essential Tee — Black</h3>
+              <div class="card__meta">
+                <span class="card__price">Rs. 3,299</span>
+                <button class="card__details-btn">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 5l7 7-7 7M5 12h14"/></svg></button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <h4>Essential Black</h4>
+            <ul class="card__back-list">
+              <li><span>Fabric</span><span>220gsm cotton</span></li>
+              <li><span>Fit</span><span>True to size</span></li>
+              <li><span>Sizes</span><span>S · M · L</span></li>
+              <li><span>Care</span><span>Cold wash</span></li>
+            </ul>
+            <p class="card__back-desc">Lighter everyday weight, same chest graffiti print, closer to a regular fit.</p>
+            <button class="card__back-close">← Back <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 19l-7-7 7-7M4 12h16"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="card" data-color="white" data-sizes="XL" data-price="Rs. 3,499" data-img="assets/images/tee-white.png" data-name="Point Logo Tee — White / XL" data-desc="Oversized fit crewneck in premium 260gsm heavyweight cotton, finished with the signature gold POINT graffiti drop at the chest.">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <img src="assets/images/tee-white.png" alt="Point Logo Tee White XL">
+              <div class="card__quick"><button class="card__quick-btn">Quick View</button></div>
+            </div>
+            <div class="card__body">
+              <h3>Point Logo Tee — White / XL</h3>
+              <div class="card__meta">
+                <span class="card__price">Rs. 3,499</span>
+                <button class="card__details-btn">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 5l7 7-7 7M5 12h14"/></svg></button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <h4>White Tee — XL</h4>
+            <ul class="card__back-list">
+              <li><span>Fabric</span><span>260gsm cotton</span></li>
+              <li><span>Fit</span><span>Oversized</span></li>
+              <li><span>Sizes</span><span>XL</span></li>
+              <li><span>Care</span><span>Cold wash</span></li>
+            </ul>
+            <p class="card__back-desc">Boxy silhouette, dropped shoulder seams, ribbed collar — built for everyday wear that doesn't fade or lose shape.</p>
+            <button class="card__back-close">← Back <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 19l-7-7 7-7M4 12h16"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="card" data-color="black" data-sizes="XL" data-price="Rs. 3,499" data-img="assets/images/tee-black.png" data-name="Point Logo Tee — Black / XL" data-desc="Oversized fit crewneck in premium 260gsm heavyweight cotton, finished with the signature gold POINT graffiti drop at the chest.">
+        <div class="card__inner">
+          <div class="card__face card__front">
+            <div class="card__media">
+              <img src="assets/images/tee-black.png" alt="Point Logo Tee Black XL">
+              <div class="card__quick"><button class="card__quick-btn">Quick View</button></div>
+            </div>
+            <div class="card__body">
+              <h3>Point Logo Tee — Black / XL</h3>
+              <div class="card__meta">
+                <span class="card__price">Rs. 3,499</span>
+                <button class="card__details-btn">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 5l7 7-7 7M5 12h14"/></svg></button>
+              </div>
+            </div>
+          </div>
+          <div class="card__face card__back">
+            <h4>Black Tee — XL</h4>
+            <ul class="card__back-list">
+              <li><span>Fabric</span><span>260gsm cotton</span></li>
+              <li><span>Fit</span><span>Oversized</span></li>
+              <li><span>Sizes</span><span>XL</span></li>
+              <li><span>Care</span><span>Cold wash</span></li>
+            </ul>
+            <p class="card__back-desc">Boxy silhouette, dropped shoulder seams, ribbed collar — built for everyday wear that doesn't fade or lose shape.</p>
+            <button class="card__back-close">← Back <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 19l-7-7 7-7M4 12h16"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div>
+      <div class="footer__logo">
+        <img src="assets/images/logo.jpg" alt="POINT logo">
+        <span>POINT</span>
+      </div>
+      <p>Street-born, built to last. Oversized essentials designed in Karachi, worn everywhere.</p>
+      <div class="newsletter">
+        <input type="email" placeholder="Your email">
+        <button>Join</button>
+      </div>
+    </div>
+    <div>
+      <h5>SHOP</h5>
+      <ul>
+        <li><a href="shop.html">New Arrivals</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>SUPPORT</h5>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Returns & Exchange</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>FOLLOW</h5>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">TikTok</a></li>
+        <li><a href="https://wa.me/923218633268" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© 2026 POINT. All rights reserved.</span>
+    <span>Karachi, Pakistan</span>
+  </div>
+</footer>
+
+<!-- Quick View Modal -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal">
+    <div class="modal__media"><img id="modalImg" src="" alt=""></div>
+    <div class="modal__body">
+      <button class="modal__close" id="modalClose" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <h3 id="modalTitle">—</h3>
+      <div class="modal__price" id="modalPrice">—</div>
+      <p class="modal__desc" id="modalDesc">—</p>
+      <span class="modal__label">Select Size</span>
+      <div class="modal__sizes">
+        <button class="size-pill">S</button>
+        <button class="size-pill selected">M</button>
+        <button class="size-pill">L</button>
+        <button class="size-pill">XL</button>
+      </div>
+      <button id="modalAddToCart" class="btn btn--solid" style="width:100%;justify-content:center;">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/shop.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — POINT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="announce">FREE SHIPPING ON ORDERS RS. 7,500+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="index.html" class="nav__logo">
+      <img src="assets/images/logo.jpg" alt="POINT logo">
+      <span>POINT</span>
+    </a>
+    <nav>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active-link">About</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav__actions">
+      <div class="nav-search" id="navSearch">
+        <div class="nav-search__box">
+          <input type="text" class="nav-search__input" placeholder="Search products…" autocomplete="off">
+        </div>
+        <button type="button" class="icon-btn nav-search__toggle" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        </button>
+      </div>
+      <button class="icon-btn" aria-label="Account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 5-6 8-6s6.5 2 8 6"/></svg>
+      </button>
+      <a href="cart.html" class="icon-btn" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.8h8.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+        <span class="cart-count">0</span>
+      </a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+        <span class="theme-toggle__knob">☀️</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- About hero -->
+<section class="hero about-hero">
+  <video class="hero__video" autoplay muted loop playsinline poster="assets/images/tee-black.png">
+    <source src="assets/video/about-hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero__scrim"></div>
+  <div class="hero__content">
+    <span class="hero__eyebrow reveal">OUR STORY</span>
+    <h1 class="reveal">Street-Born.<br>Built To Last.</h1>
+  </div>
+</section>
+
+<!-- Story — diagonal collage (image / details staggered) -->
+<div class="wrap about-diagonal reveal-stagger">
+
+  <div class="diag-tile diag-tile--image diag-tile--1 flip-tile">
+    <div class="flip-tile__inner">
+      <img class="flip-tile__face flip-tile__front" src="assets/images/tee-white.png" alt="Point white tee">
+      <img class="flip-tile__face flip-tile__back" src="assets/images/tee-black.png" alt="Point black tee">
+    </div>
+  </div>
+
+  <div class="diag-tile diag-tile--details diag-tile--2">
+    <h2>Where It Started</h2>
+    <p>POINT began on the streets of Karachi — not in a studio, but in the sketchbooks and spray cans of a small crew who thought local streetwear deserved the same weight as anything coming out of Tokyo or LA.</p>
+    <p>The name says it all: every piece has to earn its place. No filler drops, no rushed prints — just tees built heavy, cut oversized, and finished with a mark you'd recognize from across the room.</p>
+  </div>
+
+  <div class="diag-tile diag-tile--details diag-tile--3">
+    <h2>The Mark</h2>
+    <p>The graffiti wordmark with the dripping halo is deliberate — a nod to the brand's street roots, and the "elevated" standard we hold every piece to. It's screen-printed in gold on every tee, never a sticker, never a shortcut.</p>
+    <p>What launched as a single tee drop is growing one product at a time — but the standard stays the same: premium heavyweight cotton, oversized fits, and a print that outlasts the shirt.</p>
+  </div>
+
+  <div class="diag-tile diag-tile--image diag-tile--4 flip-tile">
+    <div class="flip-tile__inner">
+      <img class="flip-tile__face flip-tile__front" src="assets/images/tee-black.png" alt="Point black tee">
+      <img class="flip-tile__face flip-tile__back" src="assets/images/tee-white.png" alt="Point white tee">
+    </div>
+  </div>
+
+</div>
+
+<!-- Values -->
+<div class="wrap values reveal-stagger">
+  <div class="value-card">
+    <span>01</span>
+    <h3>Built Heavy</h3>
+    <p>260gsm+ cotton on every piece — not the thin, see-through stuff. Made to hold its shape wash after wash.</p>
+  </div>
+  <div class="value-card">
+    <span>02</span>
+    <h3>Cut Oversized</h3>
+    <p>Dropped shoulders, boxy fit, real streetwear proportions — designed to be worn, not just photographed.</p>
+  </div>
+  <div class="value-card">
+    <span>03</span>
+    <h3>Karachi Made</h3>
+    <p>Designed and printed locally, worn everywhere — proof that local streetwear can hold its own anywhere.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div>
+      <div class="footer__logo">
+        <img src="assets/images/logo.jpg" alt="POINT logo">
+        <span>POINT</span>
+      </div>
+      <p>Street-born, built to last. Oversized essentials designed in Karachi, worn everywhere.</p>
+      <div class="newsletter">
+        <input type="email" placeholder="Your email">
+        <button>Join</button>
+      </div>
+    </div>
+    <div>
+      <h5>SHOP</h5>
+      <ul>
+        <li><a href="shop.html">New Arrivals</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>SUPPORT</h5>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Returns & Exchange</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>FOLLOW</h5>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">TikTok</a></li>
+        <li><a href="https://wa.me/923218633268" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© 2026 POINT. All rights reserved.</span>
+    <span>Karachi, Pakistan</span>
+  </div>
+</footer>
+
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
