@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POINT — Product Management</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+  <header class="admin-topbar">
+    <a class="brand-mark" href="../index.html">POINT</a>
+    <div class="topbar-right">
+      <span id="adminEmail" class="admin-email"></span>
+      <button id="logoutBtn" class="ghost-btn">Log out</button>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <section class="dashboard-head">
+      <div>
+        <p class="eyebrow">CONTROL ROOM</p>
+        <h1>Product <em>management.</em></h1>
+        <p class="subcopy">Keep the catalogue current without touching the website code.</p>
+      </div>
+      <button id="newProductBtn" class="primary-btn">Add product <span>+</span></button>
+    </section>
+
+    <section class="stats">
+      <article><span>Total products</span><strong id="totalProducts">—</strong></article>
+      <article><span>In stock</span><strong id="inStock">—</strong></article>
+      <article><span>Featured</span><strong id="featuredProducts">—</strong></article>
+    </section>
+
+    <section class="products-panel">
+      <div class="panel-head">
+        <h2>Catalogue</h2>
+        <input id="searchInput" class="search-input" type="search" placeholder="Search products…">
+      </div>
+      <div id="productsList" class="products-list">
+        <div class="empty-state">Loading products…</div>
+      </div>
+    </section>
+  </main>
+
+  <div id="productModal" class="modal-backdrop" hidden>
+    <section class="product-modal" role="dialog" aria-modal="true">
+      <button id="closeModal" class="modal-close" aria-label="Close">×</button>
+      <p class="eyebrow" id="modalEyebrow">NEW PRODUCT</p>
+      <h2 id="modalTitle">Add product</h2>
+
+      <form id="productForm" class="product-form">
+        <input id="productId" type="hidden">
+
+        <label>Product name
+          <input id="productName" type="text" required>
+        </label>
+
+        <div class="form-grid">
+          <label>Price
+            <input id="productPrice" type="number" min="0" step="0.01" required>
+          </label>
+          <label>Stock
+            <input id="productStock" type="number" min="0" step="1" value="0" required>
+          </label>
+        </div>
+
+        <label>Category
+          <input id="productCategory" type="text" placeholder="T-Shirts">
+        </label>
+
+        <label>Sizes
+          <input id="productSizes" type="text" placeholder="S, M, L, XL">
+        </label>
+
+        <label>Image URL
+          <input id="productImage" type="url" placeholder="https://…">
+        </label>
+
+        <label>Description
+          <textarea id="productDescription" rows="4"></textarea>
+        </label>
+
+        <label class="check-row">
+          <input id="productFeatured" type="checkbox">
+          Featured / Best Seller
+        </label>
+
+        <p id="formMessage" class="form-message" role="alert"></p>
+
+        <div class="modal-actions">
+          <button type="button" id="cancelBtn" class="ghost-btn">Cancel</button>
+          <button type="submit" class="primary-btn">Save changes <span>↗</span></button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
